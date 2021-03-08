@@ -251,6 +251,9 @@ img {
         padding: 13px 0;
         border: 1px solid transparent;
         background: #f2f2f2;
+        appearance: none;
+        -webkit-appearance: none;
+        opacity: 1;
         font-size: 1rem;
         letter-spacing: 1.5px; }
         .navbar-down form input[type="search"]:focus {
@@ -268,7 +271,7 @@ img {
     text-align: center;
     padding: 0 20px;
     margin: 0 auto;
-    height: 100%; }
+    height: auto; }
     .hero-content h1 {
       padding-top: 10%; }
     .hero-content p {
@@ -790,9 +793,9 @@ img {
     .navbar-top ul a {
       padding: 0.6rem; }
   .pricing {
-    height: 283vh; }
+    height: auto; }
     .pricing-showcase {
-      height: 272vh; }
+      height: auto; }
     .pricing .card {
       display: flex;
       align-items: stretch !important;
@@ -898,22 +901,26 @@ img {
       padding: 0.6rem 0 0 1rem; }
       .navbar-down .forms {
         grid-area: form; }
-  .hero-content h1 {
-    padding-top: 20%; }
-  .hero-content p {
-    margin: 1rem 0; }
-    .hero-content p:last-of-type {
-      margin-bottom: 2rem; }
-    .hero-content p br {
-      display: none; }
-  .hero-content div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    .hero-content div a {
-      margin: 0; }
-      .hero-content div a:last-of-type {
-        margin-top: 1rem; }
+  .hero {
+    height: auto; }
+    .hero-content {
+      padding: 4rem 1rem; }
+      .hero-content h1 {
+        padding: 0; }
+      .hero-content p {
+        margin: 1rem 0; }
+        .hero-content p:last-of-type {
+          margin-bottom: 2rem; }
+        .hero-content p br {
+          display: none; }
+      .hero-content div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .hero-content div a {
+          margin: 0; }
+          .hero-content div a:last-of-type {
+            margin-top: 1rem; }
   .home-source br {
     display: none; }
   .home-showcase br {
@@ -921,11 +928,11 @@ img {
   .home-logos .items img {
     width: 100%; }
   .pricing {
-    height: 380vh; }
+    height: auto; }
     .pricing .container {
       padding: 1rem; }
     .pricing-showcase {
-      height: 360vh; }
+      height: auto; }
       .pricing-showcase .card-1, .pricing-showcase .card-2, .pricing-showcase .card-3, .pricing-showcase .card-4 {
         flex: 100%;
         max-width: 100%; }
@@ -952,40 +959,44 @@ img {
       .community-showcase .boxes .box-3 h3,
       .community-showcase .boxes .box-4 h3 {
         text-align: center; }
-  .pro-hero-content {
-    padding: 3rem 1.25rem; }
-    .pro-hero-content br {
-      display: none; }
-    .pro-hero-content h1 {
-      font-size: 3rem; }
-    .pro-hero-content p {
-      font-size: 1.25rem;
-      font-weight: 700; }
-    .pro-hero-content a {
-      width: 60%; }
-  .pro-hero-packages {
-    padding-top: 12%; }
+  .pro-hero {
+    height: auto; }
+    .pro-hero-content {
+      padding: 4rem 1.25rem; }
+      .pro-hero-content br {
+        display: none; }
+      .pro-hero-content h1 {
+        font-size: 3rem; }
+      .pro-hero-content p {
+        font-size: 1.25rem;
+        font-weight: 700; }
+      .pro-hero-content a {
+        width: 60%; }
+    .pro-hero-packages {
+      padding-top: 12%; }
   .pro-section-content {
     padding: 4rem 1.25rem; }
     .pro-section-content br {
       display: none; }
   .pro-features-content .isi {
-    padding-left: 40%; }
+    padding-left: 33%; }
   .pro-features-content .flex-box {
     width: 100%; }
-  .teams-hero-content {
-    padding: 5rem 1.25rem; }
-    .teams-hero-content br {
-      display: none; }
-    .teams-hero-content h1 {
-      font-size: 3rem; }
-    .teams-hero-content p {
-      font-size: 1.25rem;
-      font-weight: 700; }
-    .teams-hero-content a {
-      width: 60%; }
+  .teams-hero {
+    height: auto; }
+    .teams-hero-content {
+      padding: 4rem 1.25rem; }
+      .teams-hero-content br {
+        display: none; }
+      .teams-hero-content h1 {
+        font-size: 3rem; }
+      .teams-hero-content p {
+        font-size: 1.25rem;
+        font-weight: 700; }
+      .teams-hero-content a {
+        width: 60%; }
   .teams-section-features .isi {
-    padding-left: 50%; }
+    padding-left: 33%; }
   .footer-items {
     display: flex;
     flex-direction: column; }
