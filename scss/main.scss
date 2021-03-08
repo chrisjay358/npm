@@ -156,6 +156,12 @@ img {
           outline: 0.2px solid #000;
         }
       }
+
+      input[type="submit"] {
+        appearance: none;
+        -webkit-appearance: none;
+        opacity: 1;
+      }
     }
 
     div:last-of-type {

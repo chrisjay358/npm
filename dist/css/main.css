@@ -258,6 +258,10 @@ img {
         letter-spacing: 1.5px; }
         .navbar-down form input[type="search"]:focus {
           outline: 0.2px solid #000; }
+      .navbar-down form input[type="submit"] {
+        appearance: none;
+        -webkit-appearance: none;
+        opacity: 1; }
     .navbar-down div:last-of-type {
       display: flex;
       justify-self: flex-end;
