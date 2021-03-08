@@ -1,0 +1,206 @@
+.container {
+  max-width: 1100px;
+  padding: 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn {
+  &-dark {
+    @extend %btn-shared;
+    background: $dark-color;
+    color: #fff;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: auto;
+  }
+
+  &-outline {
+    @extend %btn-shared;
+    border: 1px solid $lighter-color;
+  }
+
+  &-transparent {
+    @extend %btn-shared;
+    border: 1px solid transparent;
+  }
+
+  &-red {
+    @extend %btn-shared;
+    background: #c12127;
+    border-bottom: 5px solid #fa8717;
+    padding: 16px 42px;
+    color: #fff;
+  }
+
+  &-purple {
+    @extend %btn-shared;
+    background: #e81aa8;
+    border-bottom: 5px solid #b30ad2;
+    padding: 16px 42px;
+    color: #fff;
+    margin-left: 50px;
+  }
+
+  &-outlight {
+    @extend %btn-shared;
+    border: 1px solid #ddd;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 200px;
+    width: 80%;
+  }
+
+  &-outdark {
+    @extend %btn-shared;
+    border: 1px solid #333;
+    padding: 1rem;
+    border-radius: 200px;
+    width: 80%;
+  }
+
+  &-white {
+    @extend %btn-shared;
+    border: 1px solid #fff;
+    padding: 1rem 4rem;
+    border-radius: 200px;
+    text-transform: uppercase;
+    background: #fff;
+    color: $bottom-orange;
+    font-weight: 600;
+  }
+
+  &-gradient {
+    @extend %btn-shared;
+    border: 1px solid transparent;
+    padding: 1rem 4rem;
+    border-radius: 200px;
+    text-transform: uppercase;
+    background: $gradient-color;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+}
+
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  color: #ddd;
+}
+
+// Padding
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+.pd {
+  padding: 1rem;
+}
+
+// Margin
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+/* Texting */
+.text-primary {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.text-secondary {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.text-header {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.tiny {
+  font-size: 2.25;
+}
+
+// Flex
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4);
+
+  h3 {
+    background: #777;
+    color: #fff;
+  }
+
+  i {
+    background: $gradient-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+  }
+
+  .glacier {
+    height: 3px;
+  }
+
+  .glacier-2 {
+    height: 3px;
+    background: linear-gradient(to right, #e02aff, #c12127, #ff4b01, #fb8817);
+  }
+
+  ul {
+    color: $main-color;
+    font-weight: 700;
+
+    &:first-of-type {
+      color: #333;
+    }
+  }
+
+  &-items {
+    &:nth-child(4) {
+      background: #eee;
+    }
+    div {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}
