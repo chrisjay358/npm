@@ -447,7 +447,7 @@ img {
   .docs-navbar .btn-icon {
     position: fixed;
     top: 25px;
-    right: 12px;
+    right: 18px;
     padding: 0 0.5rem;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -456,6 +456,19 @@ img {
     font-size: 1.5rem;
     display: none; }
     .docs-navbar .btn-icon:hover {
+      background: #c12127; }
+  .docs-navbar .btn-share {
+    position: fixed;
+    top: 25px;
+    right: 65px;
+    padding: 0 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #ddd;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none; }
+    .docs-navbar .btn-share:hover {
       background: #c12127; }
 
 .docs-showcase-content {
@@ -825,12 +838,24 @@ img {
       padding-left: 69%; }
   .docs-navbar {
     padding: 0 0.5rem; }
-    .docs-navbar .btn-icon {
+    .docs-navbar .btn-icon,
+    .docs-navbar .btn-share {
       display: block; }
     .docs-navbar > div:nth-child(4) {
       display: none; }
     .docs-navbar input {
-      width: auto; }
+      position: fixed;
+      top: 19px;
+      left: 12px;
+      padding: 1rem 2.5rem;
+      background: #efefef;
+      width: 66%;
+      font-size: 1rem; }
+    .docs-navbar .search {
+      transform: scale(0);
+      transition: all 0.3s ease-in-out; }
+    .docs-navbar .search.visible {
+      transform: scale(1); }
   .docs-showcase-content {
     position: relative;
     grid-template-columns: 1fr; }
@@ -944,6 +969,10 @@ img {
         margin-bottom: 0; }
     .pricing-features .isi {
       padding-left: 40%; }
+  .docs-navbar {
+    padding: 0 0.2rem; }
+    .docs-navbar img {
+      width: 30px; }
   .community-showcase {
     height: 340vh; }
     .community-showcase .content br {

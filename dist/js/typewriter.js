@@ -70,3 +70,10 @@ document
   .addEventListener("click", () =>
     document.querySelector(".menu").classList.toggle("slide")
   );
+
+// Display search for Document
+document
+  .querySelector(".btn-share")
+  .addEventListener("click", () =>
+    document.querySelector(".search").classList.toggle("visible")
+  );

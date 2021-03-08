@@ -78,7 +78,8 @@
     &-navbar {
       padding: 0 0.5rem;
 
-      .btn-icon {
+      .btn-icon,
+      .btn-share {
         display: block;
       }
 
@@ -87,7 +88,22 @@
       }
 
       input {
-        width: auto;
+        position: fixed;
+        top: 19px;
+        left: 12px;
+        padding: 1rem 2.5rem;
+        background: $lighter-color;
+        width: 66%;
+        font-size: 1rem;
+      }
+
+      .search {
+        transform: scale(0);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .search.visible {
+        transform: scale(1);
       }
     }
 
@@ -354,6 +370,18 @@
     &-features {
       .isi {
         padding-left: 40%;
+      }
+    }
+  }
+
+  // Documentation
+  .docs {
+    &-navbar {
+      // overflow: hidden;
+      padding: 0 0.2rem;
+
+      img {
+        width: 30px;
       }
     }
   }
