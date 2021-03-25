@@ -1037,3 +1037,11 @@ img {
     .footer-items .company,
     .footer-items .terms {
       padding: 1rem; } }
+
+@media (max-height: 500px) {
+  .hero,
+  .pricing-showcase,
+  .pro-hero,
+  .teams-hero {
+    height: auto;
+    padding: 2rem; } }

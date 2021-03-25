@@ -518,3 +518,13 @@
     }
   }
 }
+
+@media (max-height: 500px) {
+  .hero,
+  .pricing-showcase,
+  .pro-hero,
+  .teams-hero {
+    height: auto;
+    padding: 2rem;
+  }
+}
